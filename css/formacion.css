@@ -311,6 +311,9 @@
 }
 
 .more-btn-sprint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     width: 130.945px;
     height: 38.391px;

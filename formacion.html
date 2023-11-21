@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/formacion.css">
+  <title>Formación | CEDA</title>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <a href="index.html">
+        <img class="logo-header" src="img/Logo.png" />
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="formacion.html">Formación
+            <img src="img/expand-menu.png" />
+          </a>
+        </li>
+        <li>
+          <a href="">Somos CEDA</a>
+        </li>
+        <li>
+          <a href="">Empresas</a>
+        </li>
+        <li>
+          <a href="">Green Tech</a>
+        </li>
+        <li>
+          <a href="">Bolsa de empleo</a>
+        </li>
+        <li>
+          <a href="">Contacto</a>
+        </li>
+        <li>
+          <a href="">Idioma
+            <img src="img/expand-menu.png" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="campus-container">
+      <a href="https://ceda.l4c.app/" target="_blank">
+          <span class="g2-campus">CAMPUS</span>
+          <img class="campus-arrow" src="img/campus-arrow.png" />
+      </a>
+    </div>
+  </header>
+  <main>
+    <div class="filter-container">
+      <div class="input-filter-container">
+        <input type="text" name="" id="" placeholder="Encuentra tu formación">
+        <button class="filter-btn">
+          <img src="./img/search-icon.png" alt="">
+        </button>
+      </div>
+      <div id="myBtnContainer" class="btn-filter-container">
+        <button class="btn active" onclick="filterSelection('all')"> Todos</button>
+        <button class="btn" onclick="filterSelection('master')"> Masters</button>
+        <button class="btn" onclick="filterSelection('bootcamp')"> Bootcamps</button>
+        <button class="btn" onclick="filterSelection('curso')"> Cursos</button>
+        <button class="btn" onclick="filterSelection('sprint')"> Sprint</button>
+      </div>
+    </div>
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+    <div class="container">
+      <div class="filterDiv master">
+        <div class="master-container">
+          <div class="master-heading-container">
+            <img class="master-img" src="./img/cursos/iconos-cursos/master.png" alt="">
+            <div class="master-subheading-container">
+              <p class="heading">Máster en Data Science</p>
+              <div class="hours-price-container">
+                <img class="time-icon" src="./img/Iconos/time.png" alt="">
+                <div class="price-container">
+                  <span class="time">1500h </span>
+                  <span class="price-txt"> | 995 €</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="description-txt">Adquiere las competencias necesarias para conseguir un perfil profesional en big data y data science. E nfrenta desafíos reales en la actividad laboral, tomando decisiones informadas basadas en análisis y visualización de datos.</p>
+          <a class="more-info-btn" href="./formacion/masters/master-en-data-science.html">+ INFORMACIÓN</a>
+        </div>
+      </div>
+      <div class="filterDiv master">
+        <div class="master-container">
+          <div class="master-heading-container">
+            <img class="master-img" src="./img/cursos/iconos-cursos/master.png" alt="">
+            <div class="master-subheading-container">
+              <p class="heading">Máster en Data Strategy</p>
+              <div class="hours-price-container">
+                <img class="time-icon" src="./img/Iconos/time.png" alt="">
+                <div class="price-container">
+                  <span class="time">1500h </span>
+                  <span class="price-txt"> | 995 €</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="description-txt">Aprende estrategia de datos, abarcando temas como data model, MDM strategy y data quality.  Tras finalizar, sabrás gestionar un gran volumen de datos, dominar MDM solutions y desarrollar activos de alta calidad, alcanzando un elevado perfil profesional.</p>
+          <a class="more-info-btn" href="./formacion/masters/master-en-data-strategy.html">+ INFORMACIÓN</a>
+        </div>
+      </div>
+      <div class="filterDiv bootcamp">
+        <div class="master-container">
+          <div class="master-heading-container">
+            <img class="master-img" src="./img/cursos/iconos-cursos/bootcamp.png" alt="">
+            <div class="master-subheading-container">
+              <p class="heading">Bootcamp en Business Analytics</p>
+              <div class="hours-price-container">
+                <img class="time-icon" src="./img/Iconos/time.png" alt="">
+                <div class="price-container">
+                  <span class="time">600h </span>
+                  <span class="price-txt"> | 498 €</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="description-txt">Adquiere habilidades y conocimientos en el análisis de datos y en la inteligencia de negocios. Aprende a trabajar con datos masivos y bases de datos, a utilizar lenguajes de programación relevantes y a aplicar técnicas de data science para tomar decisiones en el entorno empresarial.</p>
+          <a class="more-btn-bootcamp" href="./formacion/bootcamp/bootcamp-en-business-analytics.html">+ INFORMACIÓN</a>
+        </div>
+      </div>
+      <div class="filterDiv bootcamp">
+        <div class="master-container">
+          <div class="master-heading-container">
+            <img class="master-img" src="./img/cursos/iconos-cursos/bootcamp.png" alt="">
+            <div class="master-subheading-container">
+              <p class="heading">Bootcamp en Modelos de Machine Learning</p>
+              <div class="hours-price-container">
+                <img class="time-icon" src="./img/Iconos/time.png" alt="">
+                <div class="price-container">
+                  <span class="time">600h </span>
+                  <span class="price-txt"> | 498 €</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="description-txt">Adquiere habilidades y conocimientos en el análisis de datos y en la inteligencia de negocios. Aprende a trabajar con datos masivos y bases de datos, a utilizar lenguajes de programación relevantes y a aplicar técnicas de data science para tomar decisiones en el entorno empresarial.</p>
+          <a class="more-btn-bootcamp" href="./formacion/bootcamp/bootcamp-en-modelos-de-machine-learning.html">+ INFORMACIÓN</a>
+        </div>
+      </div>
+      <div class="filterDiv curso">
+        <div class="master-container">
+          <div class="master-heading-curso-container">
+            <img class="master-img" src="./img/cursos/iconos-cursos/curso.png" alt="">
+            <div class="master-subheading-container">
+              <p class="heading-curso-fixed">Curso de Data Science Aplicada</p>
+            </div>
+          </div>
+          <div class="hours-price-container">
+            <img class="time-icon" src="./img/Iconos/time.png" alt="">
+            <div class="price-container">
+              <span class="time">200h </span>
+              <span class="price-txt"> | 375 €</span>
+          </div>
+        </div>
+        <p class="description-txt txt-curso">Adquiere las competencias para trabajar como data scientist. Aprende machine learning, redes neuronales y visualización de datos, resolviendo problemas reales.</p>
+        <a class="more-btn-curso" href="./formacion/curso/curso-de-data-science-aplicada.html">+ INFORMACIÓN</a>
+      </div>
+    </div>
+    <div class="filterDiv curso">
+      <div class="master-container">
+        <div class="master-heading-curso-container">
+          <img class="master-img" src="./img/cursos/iconos-cursos/curso.png" alt="">
+          <div class="master-subheading-container">
+            <p class="heading-curso-fixed">Curso en Comunicación y Narración de Datos</p>
+          </div>
+        </div>
+        <div class="hours-price-container">
+          <img class="time-icon" src="./img/Iconos/time.png" alt="">
+          <div class="price-container">
+            <span class="time">200h </span>
+            <span class="price-txt"> | 375 €</span>
+          </div>
+        </div>
+        <p class="description-txt txt-curso">Descubre el poder de contar historias con datos  y aprende a utilizar herramientas para construir narrativas y presentar información de forma efectiva y estratégica.</p>
+        <a class="more-btn-curso" href="./formacion/curso/curso-en-comunicacion-y-narracion-de-datos.html">+ INFORMACIÓN</a>
+      </div>
+    </div>
+    <div class="filterDiv curso">
+      <div class="master-container">
+        <div class="master-heading-curso-container">
+          <img class="master-img" src="./img/cursos/iconos-cursos/curso.png" alt="">
+          <div class="master-subheading-container">
+            <p class="heading-curso-fixed">Curso de Estadística para Pronóstico</p>
+          </div>
+        </div>
+        <div class="hours-price-container">
+          <img class="time-icon" src="./img/Iconos/time.png" alt="">
+          <div class="price-container">
+            <span class="time">200h </span>
+            <span class="price-txt"> | 375 €</span>
+          </div>
+        </div>
+        <p class="description-txt txt-curso">Fórmate de forma práctica en fundamentos de la inferencia. Aprende a pronosticar y realizar estimaciones mediante el uso de herramientas matemáticas.</p>
+        <a class="more-btn-curso" href="./formacion/curso/curso-de-estadistica-para-pronostico.html">+ INFORMACIÓN</a>
+      </div>
+    </div>
+    <div class="filterDiv curso">
+      <div class="master-container">
+        <div class="master-heading-curso-container">
+          <img class="master-img" src="./img/cursos/iconos-cursos/curso.png" alt="">
+          <div class="master-subheading-container">
+            <p class="heading-curso-fixed">Curso en Estadística para Recursos Humanos</p>
+          </div>
+        </div>
+        <div class="hours-price-container">
+          <img class="time-icon" src="./img/Iconos/time.png" alt="">
+          <div class="price-container">
+            <span class="time">200h </span>
+            <span class="price-txt"> | 375 €</span>
+          </div>
+        </div>
+        <p class="description-txt txt-curso">Aprende a utilizar el análisis de datos para gestionar la plantilla de trabajadores, mejorar la selección de candidatos y optimizar estrategias de recursos humanos.</p>
+        <a class="more-btn-curso" href="./formacion/curso/curso-en-estadistica-para-recursos-humanos.html">+ INFORMACIÓN</a>
+      </div>
+    </div>
+    <div class="filterDiv curso">
+      <div class="master-container">
+        <div class="master-heading-curso-container">
+          <img class="master-img" src="./img/cursos/iconos-cursos/curso.png" alt="">
+          <div class="master-subheading-container">
+            <p class="heading-curso-fixed">Curso en Forecasting and Machine Learning</p>
+          </div>
+        </div>
+        <div class="hours-price-container">
+          <img class="time-icon" src="./img/Iconos/time.png" alt="">
+          <div class="price-container">
+            <span class="time">200h </span>
+            <span class="price-txt"> | 375 €</span>
+          </div>
+        </div>
+        <p class="description-txt txt-curso">Identifica patrones en bases y conjuntos de datos y analiza tendencias para lograr una precisa previsión de la demanda y de las ventas futuras.</p>
+        <a class="more-btn-curso" href="./formacion/curso/curso-en-forecasting-and-machine-learning.html">+ INFORMACIÓN</a>
+      </div>
+    </div>
+    <div class="filterDiv curso">
+      <div class="master-container">
+        <div class="master-heading-curso-container">
+          <img class="master-img" src="./img/cursos/iconos-cursos/curso.png" alt="">
+          <div class="master-subheading-container">
+            <p class="heading-curso-fixed">Curso en Data Analytics con Programación</p>
+          </div>
+        </div>
+        <div class="hours-price-container">
+          <img class="time-icon" src="./img/Iconos/time.png" alt="">
+          <div class="price-container">
+            <span class="time">200h </span>
+            <span class="price-txt"> | 375 €</span>
+          </div>
+        </div>
+        <p class="description-txt txt-curso">Especialízate en bases de datos relacionales, aprende a ser un analista técnico utilizando SQL y diseña tableros de control con Power BI y Power Query.</p>
+        <a class="more-btn-curso" href="./formacion/curso/curso-en-data-analytics-con-programacion.html">+ INFORMACIÓN</a>
+      </div>
+    </div>
+    <div class="filterDiv curso">
+      <div class="master-container">
+        <div class="master-heading-curso-container">
+          <img class="master-img" src="./img/cursos/iconos-cursos/curso.png" alt="">
+          <div class="master-subheading-container">
+            <p class="heading-curso-fixed">Curso en Algoritmos y Lógica</p>
+          </div>
+        </div>
+        <div class="hours-price-container">
+          <img class="time-icon" src="./img/Iconos/time.png" alt="">
+          <div class="price-container">
+            <span class="time">200h </span>
+            <span class="price-txt"> | 375 €</span>
+          </div>
+        </div>
+        <p class="description-txt txt-curso">Adquiere las competencias para el diseño de algoritmos y la resolución de problemas. Aprende programación, lógica proposicional y matemáticas.</p>
+        <a class="more-btn-curso" href="./formacion/curso/curso-en-algoritmos-y-logica.html">+ INFORMACIÓN</a>
+      </div>
+    </div>
+    <div class="filterDiv curso">
+      <div class="master-container">
+        <div class="master-heading-curso-container">
+          <img class="master-img" src="./img/cursos/iconos-cursos/curso.png" alt="">
+          <div class="master-subheading-container">
+            <p class="heading-curso-fixed">Curso en Machine Learning</p>
+          </div>
+        </div>
+        <div class="hours-price-container">
+          <img class="time-icon" src="./img/Iconos/time.png" alt="">
+          <div class="price-container">
+            <span class="time">200h </span>
+            <span class="price-txt"> | 375 €</span>
+          </div>
+        </div>
+        <p class="description-txt txt-curso">Aprende los fundamentos clave para construir funciones de predicción y a través de la IA. Aprende sobre recolección de datos, algoritmos y evaluación.</p>
+        <a class="more-btn-curso" href="./formacion/curso/curso-en-machine-learning.html">+ INFORMACIÓN</a>
+      </div>
+    </div>
+    <div class="filterDiv curso">
+      <div class="master-container">
+        <div class="master-heading-curso-container">
+          <img class="master-img" src="./img/cursos/iconos-cursos/curso.png" alt="">
+          <div class="master-subheading-container">
+            <p class="heading-curso-fixed">Curso en Programación para la Manipulación de Datos</p>
+          </div>
+        </div>
+        <div class="hours-price-container">
+          <img class="time-icon" src="./img/Iconos/time.png" alt="">
+          <div class="price-container">
+            <span class="time">200h </span>
+            <span class="price-txt"> | 375 €</span>
+          </div>
+        </div>
+        <p class="description-txt txt-curso">Introducción práctica a la utilización de lenguajes de programación y Data Manipulation Language (DML) en bases de datos relacionales.</p>
+        <a class="more-btn-curso" href="./formacion/curso/curso-en-programacion-para-la-manipulacion-de-datos.html">+ INFORMACIÓN</a>
+      </div>
+    </div>
+    <div class="filterDiv curso">
+      <div class="master-container">
+        <div class="master-heading-curso-container">
+          <img class="master-img" src="./img/cursos/iconos-cursos/curso.png" alt="">
+          <div class="master-subheading-container">
+            <p class="heading-curso-fixed">Curso en Revenue Management</p>
+          </div>
+        </div>
+        <div class="hours-price-container">
+          <img class="time-icon" src="./img/Iconos/time.png" alt="">
+          <div class="price-container">
+            <span class="time">200h </span>
+            <span class="price-txt"> | 375 €</span>
+          </div>
+        </div>
+        <p class="description-txt txt-curso">Aprende los principios y las prácticas del Revenue Management, centrándose en la gestión y optimización de ingresos en negocios y otros sectores.</p>
+        <a class="more-btn-curso" href="./formacion/curso/curso-en-revenue-management.html">+ INFORMACIÓN</a>
+      </div>
+    </div>
+    <div class="filterDiv curso">
+      <div class="master-container">
+        <div class="master-heading-curso-container">
+          <img class="master-img" src="./img/cursos/iconos-cursos/curso.png" alt="">
+          <div class="master-subheading-container">
+            <p class="heading-curso-fixed">Curso en Strategy Analytics y Machine Learning</p>
+          </div>
+        </div>
+        <div class="hours-price-container">
+          <img class="time-icon" src="./img/Iconos/time.png" alt="">
+          <div class="price-container">
+            <span class="time">200h </span>
+            <span class="price-txt"> | 375 €</span>
+          </div>
+        </div>
+        <p class="description-txt txt-curso">Formación integral en análisis de datos y business intelligence. Aprende a identificar patrones y tomar decisiones estratégicas para alcanzar objetivos de negocio.</p>
+        <a class="more-btn-curso" href="./formacion/curso/curso-en-strategy-analytics-y-machine-learning.html">+ INFORMACIÓN</a>
+      </div>
+    </div>
+    <div class="filterDiv sprint">
+      <div class="master-container">
+        <div class="master-heading-curso-container">
+          <img class="master-img" src="./img/cursos/iconos-cursos/sprint.png" alt="">
+          <div class="master-subheading-container">
+            <p class="heading-curso-sprint">Sprint en Técnicas complementarias de Machine Learning</p>
+          </div>
+        </div>
+        <div class="hours-price-container">
+          <img class="time-icon" src="./img/Iconos/time.png" alt="">
+          <div class="price-container">
+            <span class="time">100h </span>
+            <span class="price-txt"> | 265 €</span>
+          </div>
+        </div>
+        <p class="description-txt txt-curso">Formación integral en análisis de datos y business intelligence. Aprende a identificar patrones y tomar decisiones estratégicas para alcanzar objetivos de negocio.</p>
+        <button class="more-btn-sprint">+ INFORMACIÓN</button>
+      </div>
+    </div>
+    <div class="filterDiv sprint">
+      <div class="master-container">
+        <div class="master-heading-curso-container">
+          <img class="master-img" src="./img/cursos/iconos-cursos/sprint.png" alt="">
+          <div class="master-subheading-container">
+            <p class="heading-curso-sprint">Sprint en Data Processing</p>
+          </div>
+        </div>
+        <div class="hours-price-container">
+          <img class="time-icon" src="./img/Iconos/time.png" alt="">
+          <div class="price-container">
+            <span class="time">100h </span>
+            <span class="price-txt"> | 265 €</span>
+          </div>
+        </div>
+        <p class="description-txt txt-curso">Aprende a transformar datos en bruto en información valiosa utilizando métodos actualizados y explorando el potencial de la inteligencia artificial.</p>
+        <a class="more-btn-sprint" href="./formacion/sprint/sprint-en-data-processing.html">+ INFORMACIÓN</a>
+      </div>
+    </div>
+    <div class="filterDiv sprint">
+      <div class="master-container">
+        <div class="master-heading-curso-container">
+          <img class="master-img" src="./img/cursos/iconos-cursos/sprint.png" alt="">
+          <div class="master-subheading-container">
+            <p class="heading-curso-sprint">Sprint en <br>Modelado de Datos</p>
+          </div>
+        </div>
+        <div class="hours-price-container">
+          <img class="time-icon" src="./img/Iconos/time.png" alt="">
+          <div class="price-container">
+            <span class="time">100h </span>
+            <span class="price-txt"> | 265 €</span>
+          </div>
+        </div>
+        <p class="description-txt txt-curso">Sumérgete en  el de Modelado de Datos, un viaje que comienza explorando el concepto de big data y avanza hacia la creación de modelos de datos, procesos ETL y visualización.</p>
+        <a class="more-btn-sprint" href="./formacion/sprint/sprint-en-modelado-de-datos.html">+ INFORMACIÓN</a>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="footer-wraper">
+    <div class="footer-left">
+      <a href="index.html">
+        <img class="logo-footer" src="./img/logo-footer.png" alt="" >
+      </a>
+      <span class="copyright">© Copyright CEDA 2023</span>
+      <div class="social-media-container">
+        <a href="https://www.instagram.com/cedalab/" target="_blank">
+          <img src="./img/IG.png" alt="">
+        </a>
+        <a href="https://www.facebook.com/cedalabeducation" target="_blank">
+          <img src="./img/FB.png" alt="">
+        </a>
+        <a href="" target="_blank">
+          <img src="./img/TW.png" alt="">
+        </a>
+        <a href="https://www.linkedin.com/company/ceda-lab/" target="_blank">
+          <img src="./img/IN.png" alt="">
+        </a>
+        <a href="https://www.youtube.com/channel/UCxTLWUVpE3URCGgnU-gmbjw" target="_blank">
+          <img src="./img/YT.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-list">
+        <a href="formacion.html">
+          <span>Formación</span>
+        </a>
+        <a href="">
+          <span>Somos CEDA</span>
+        </a>
+        <a href="">
+          <span>Empresas</span>
+        </a>
+        </div>
+        <div class="footer-list">
+          <a href="">
+            <span>Green Tech</span>
+          </a>
+          <a href="">
+            <span>Bolsa de empleo</span>
+          </a>
+          <a href="">
+            <span>Contacto</span>
+          </a>
+        </div>
+      </div>
+  </div>
+</footer>
+<script>
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+
+  // Show filtered elements
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+      }
+    }
+  }
+
+  // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current control button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+
+    </script>
+</body>
+
+</html>

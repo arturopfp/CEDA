@@ -1,0 +1,39 @@
+.somos-ceda-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 855px;
+  margin: 125px 0px 95px 250px;
+}
+
+.somos-ceda-heading {
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 95.04px;
+  width: 280px;
+}
+
+.somos-ceda-subheading {
+  color: #B4BD00;
+
+  width: 495px;
+
+  text-align: justify;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 119%;
+  letter-spacing: -0.176px;
+  margin-bottom: 20px;
+}
+
+.somos-ceda-txt {
+  color: #969697;
+
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 119%;
+  letter-spacing: -0.154px;
+}

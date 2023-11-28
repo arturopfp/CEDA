@@ -799,10 +799,11 @@ div.more-info-container > div > div:nth-child(2) {
 }
 
 .clientes-container {
-    margin-top: 35px;
+    margin-top: 235px;
+    margin-bottom: 150px;
     display: flex;
     flex-direction: column;
-    
+
     align-items: center;
     justify-content: center;
 }
@@ -942,7 +943,7 @@ div.more-info-container > div > div:nth-child(2) {
 }
 
 .community-container {
-    margin-top: 150px;
+    margin-top: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
